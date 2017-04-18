@@ -11,12 +11,12 @@ var main = function() {
   var LETTER_P_EVENT_CODE === 112;
  
   $(document).keypress(function(event) { 
-    if(event.which = LETTER_L_EVENT_CODE) {
+    if(event.which === LETTER_L_EVENT_CODE) {
       $('.description').hide();
       $('.current').children('.description').show();
     }
 
-    else if(event.which = LETTER_P_EVENT_CODE) {
+    else if(event.which === LETTER_P_EVENT_CODE) {
       var currentArticle = $('.current');
       var nextArticle = currentArticle.next();
       
