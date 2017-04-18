@@ -7,8 +7,9 @@ var main = function() {
     $(this).children('.description').show();
   });  
   
-    var LETTER_P_EVENT_CODE === 112;
-    var LETTER_L_EVENT_CODE === 108;
+  $(document).keypress(function(event) {
+    LETTER_P_EVENT_CODE = 112;
+    LETTER_L_EVENT_CODE = 108;
     if(event.which === LETTER_L_EVENT_CODE) {
       $('.description').hide();
       $('.current').children('.description').show();
@@ -21,6 +22,7 @@ var main = function() {
       currentArticle.removeClass('current');
       nextArticle.addClass('current');
     }
+  });
 }
 
 $(document).ready(main);
