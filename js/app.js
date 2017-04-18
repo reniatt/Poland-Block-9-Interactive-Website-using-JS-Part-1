@@ -18,11 +18,9 @@ var main = function() {
     else if(event.which === LETTER_P_EVENT_CODE) {
       var currentArticle = $('.current');
       var nextArticle = currentArticle.next();
-      var firstArticle = currentArticle;
       
       currentArticle.removeClass('current');
       nextArticle.addClass('current');
-      lastArticle.getClass ('firstArticle');
     }
   });
 }
