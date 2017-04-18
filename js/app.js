@@ -7,8 +7,8 @@ var main = function() {
     $(this).children('.description').show();
   });
   
-  var LETTER_L_EVENT_CODE === 108;
-  var LETTER_P_EVENT_CODE === 112;
+  var LETTER_L_EVENT_CODE = 108;
+  var LETTER_P_EVENT_CODE = 112;
     $(document).keypress(function(event) {
     if(event.which === LETTER_L_EVENT_CODE) {
       $('.description').hide();
