@@ -22,7 +22,7 @@ var main = function() {
       
       currentArticle.removeClass('current');
       nextArticle.addClass('current');
-      
+    }  
       else (event.which === LETTER_O_EVENT_CODE) {
         var curentArticle = $('.current');
         var prevArticle = currentArticle.prev();
@@ -30,9 +30,22 @@ var main = function() {
         currentArticle.removeClass('current');
         prevArticle.addClass('current');
     }
+   });
+     
+      if(article.lenght < 0) {
+        var currentArticle = $('.current');
+        var nextArticle = currentArticle.first();
       
-    if(
-  });
+        currentArticle.removeClass('current');
+        firstArticle.addClass('current');
+     }
+      if else (article.lenght >= 0) {
+        var currentArticle = $('.current');
+        var nextArticle = currentArticle.next();
+      
+        currentArticle.removeClass('current');
+        nextArticle.addClass('current');
+     }
 }
 
 $(document).ready(main);
