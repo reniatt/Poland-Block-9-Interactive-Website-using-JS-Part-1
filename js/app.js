@@ -22,13 +22,13 @@ var main = function() {
       currentArticle.removeClass('current');
       nextArticle.addClass('current');
     }  
-      else (event.which === LETTER_O_EVENT_CODE) {
-        var curentArticle = $('.current');
-        var prevArticle = currentArticle.prev();
+    else (event.which === LETTER_O_EVENT_CODE) {
+       var curentArticle = $('.current');
+       var prevArticle = currentArticle.prev();
         
-        currentArticle.removeClass('current');
-        prevArticle.addClass('current');
-      }
+       currentArticle.removeClass('current');
+       prevArticle.addClass('current');
+    }
   });
 }
 
