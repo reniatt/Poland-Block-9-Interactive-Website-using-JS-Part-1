@@ -30,6 +30,8 @@ var main = function() {
         currentArticle.removeClass('current');
         prevArticle.addClass('current');
     }
+      
+    if(
   });
 }
 
