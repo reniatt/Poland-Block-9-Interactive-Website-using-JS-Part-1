@@ -15,7 +15,6 @@ var main = function() {
       $('.description').hide();
       $('.current').children('.description').show();
     }
-   
     else if(event.which === LETTER_P_EVENT_CODE) {
       var currentArticle = $('.current');
       var nextArticle = currentArticle.next();
@@ -29,22 +28,7 @@ var main = function() {
         
         currentArticle.removeClass('current');
         prevArticle.addClass('current');
-    }
-     
-      if(article.lenght < 0) {
-        var currentArticle = $('.current');
-        var nextArticle = currentArticle.first();
-      
-        currentArticle.removeClass('current');
-        firstArticle.addClass('current');
-     }
-      if else (article.lenght >= 0) {
-        var currentArticle = $('.current');
-        var nextArticle = currentArticle.next();
-      
-        currentArticle.removeClass('current');
-        nextArticle.addClass('current');
-     }
+      }
   });
 }
 
