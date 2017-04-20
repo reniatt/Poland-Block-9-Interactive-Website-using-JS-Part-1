@@ -25,10 +25,10 @@ var main = function() {
       
       else (event.which === LETTER_O_EVENT_CODE) {
         var curentArticle = $('.current');
-        var previousArticle = currentArticle.previous();
+        var prevArticle = currentArticle.prev();
         
         currentArticle.removeClass('current');
-        previousArticle.addClass('current');
+        prevArticle.addClass('current');
     }
   });
 }
