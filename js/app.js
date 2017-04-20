@@ -30,7 +30,6 @@ var main = function() {
         currentArticle.removeClass('current');
         prevArticle.addClass('current');
     }
-   });
      
       if(article.lenght < 0) {
         var currentArticle = $('.current');
@@ -46,6 +45,7 @@ var main = function() {
         currentArticle.removeClass('current');
         nextArticle.addClass('current');
      }
+  });
 }
 
 $(document).ready(main);
