@@ -20,7 +20,7 @@ var main = function() {
       currentArticle.removeClass('current');
       nextArticle.addClass('current');
     } 
-    else (event.which == 38) {
+    else if(event.which == 38) {
       var currentArticle = $('.current');
       var prevArticle = currentArticle.prev();
 	    
