@@ -9,10 +9,9 @@ var main = function() {
   
   $(document).keydown(function(event) {
     var RIGHT_ARROW_EVENT_CODE = 39
-	var DOWN_ARROW_EVENT_CODE = 40
+    var DOWN_ARROW_EVENT_CODE = 40
 	
     if(event.which == RIGHT_ARROW_EVENT_CODE) {
-	  
       $('.description').hide();
       $('.current').children('.description').show();
     }
@@ -20,14 +19,15 @@ var main = function() {
       var currentArticle = $('.current');
       var nextArticle = currentArticle.next();
       
-	  currentArticle.removeClass('current');
+      currentArticle.removeClass('current');
       nextArticle.addClass('current');
     }  
   });
 
   $(document).keydown(function(event) {
-	var RIGHT_ARROW_EVENT_CODE = 39
-	var UP_ARROW_EVENT_CODE = 38 
+    var RIGHT_ARROW_EVENT_CODE = 39
+    var UP_ARROW_EVENT_CODE = 38 
+    
     if(event.which == RIGHT_ARROW_EVENT_CODE) {
       $('.description').hide();
       $('.current').children('.description').show();
@@ -36,7 +36,7 @@ var main = function() {
       var currentArticle = $('.current');
       var prevArticle = currentArticle.prev();
       
-	  currentArticle.removeClass('current');
+      currentArticle.removeClass('current');
       prevArticle.addClass('current'); 
     }
   });
