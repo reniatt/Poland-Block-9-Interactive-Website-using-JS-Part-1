@@ -17,15 +17,23 @@ var main = function() {
       var currentArticle = $('.current');
       var nextArticle = currentArticle.next();
       
-      currentArticle.removeClass('current');
-      nextArticle.addClass('current');
+	  currentArticle.removeClass('current');
+    nextArticle.addClass('current');
+    }  
+  });
+
+  $(document).keydown(function(event) {
+	  
+    if(event.which == 39) {
+      $('.description').hide();
+      $('.current').children('.description').show();
     }
-    else(event.which == 38) {
+    else if(event.which == 38) {
       var currentArticle = $('.current');
       var prevArticle = currentArticle.prev();
       
-      currentArticle.removeClass('current');
-      prevArticle.addClass('current'); 
+	  currentArticle.removeClass('current');
+    prevArticle.addClass('current'); 
     }
   });
 }
