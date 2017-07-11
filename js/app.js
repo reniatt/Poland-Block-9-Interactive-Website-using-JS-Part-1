@@ -17,9 +17,9 @@ var main = function() {
       var currentArticle = $('.current');
       var nextArticle = currentArticle.next();
       
-	  currentArticle.removeClass('current');
-    nextArticle.addClass('current');
-    }  
+      currentArticle.removeClass('current');
+      nextArticle.addClass('current');
+     }  
   });
 
   $(document).keydown(function(event) {
@@ -32,8 +32,8 @@ var main = function() {
       var currentArticle = $('.current');
       var prevArticle = currentArticle.prev();
       
-	  currentArticle.removeClass('current');
-    prevArticle.addClass('current'); 
+      currentArticle.removeClass('current');
+      prevArticle.addClass('current'); 
     }
   });
 }
