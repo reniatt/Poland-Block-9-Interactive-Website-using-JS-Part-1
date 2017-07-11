@@ -7,21 +7,34 @@ var main = function() {
     $(this).children('.description').show();
   });  
   
-  $(document).keypress(function(event) {
-    LETTER_P_EVENT_CODE = 112;
-    LETTER_L_EVENT_CODE = 108;
+  $(document).keydown(function(event) {
     
-    if(event.which === LETTER_L_EVENT_CODE) {
+    if(event.which == 39) {
       $('.description').hide();
       $('.current').children('.description').show();
     }
-    else if(event.which === LETTER_P_EVENT_CODE) {
+    else if(event.which == 40) {
       var currentArticle = $('.current');
       var nextArticle = currentArticle.next();
       
-      currentArticle.removeClass('current');
+	  currentArticle.removeClass('current');
       nextArticle.addClass('current');
     }  
+  });
+
+  $(document).keydown(function(event) {
+	  
+    if(event.which == 39) {
+      $('.description').hide();
+      $('.current').children('.description').show();
+    }
+    else if(event.which == 38) {
+      var currentArticle = $('.current');
+      var prevArticle = currentArticle.prev();
+      
+	  currentArticle.removeClass('current');
+      prevArticle.addClass('current'); 
+    }
   });
 }
 
