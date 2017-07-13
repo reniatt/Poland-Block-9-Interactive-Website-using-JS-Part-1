@@ -18,7 +18,7 @@ var main = function() {
     }
     else if(event.which == DOWN_ARROW_KEY_CODE) {
       var currentArticle = $('.current');
-      var article = $('.all_articles');
+      var article = $('.articles');
       var nextArticle = currentArticle.next();
 	  
       currentArticle.removeClass('current');
@@ -32,7 +32,7 @@ var main = function() {
     } 
     else if(event.which == UP_ARROW_KEY_CODE) {
        var currentArticle = $('.current');
-       var article = $('.all_article');
+       var article = $('.article');
        var prevArticle = currentArticle.prev();
 	   
        currentArticle.removeClass('current');
