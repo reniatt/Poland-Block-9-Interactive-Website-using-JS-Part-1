@@ -44,7 +44,7 @@ var main = function() {
        else if(prevArticle.length <= 0) {  
          article.last().addClass('current');
        }  
-     }  
+    }  
   }); 
 }
 
