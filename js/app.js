@@ -25,10 +25,10 @@ var main = function() {
       currentArticle.removeClass('current');
 	  
       if(nextArticle.length > 0) {
-      nextArticle.addClass('current');
+        nextArticle.addClass('current');
       }
       else if(nextArticle.length <= 0) { 
-      article.first().addClass('current');
+        article.first().addClass('current');
       } 
     } 
     else if(event.which == UP_ARROW_KEY_CODE) {
@@ -39,10 +39,10 @@ var main = function() {
        currentArticle.removeClass('current');
 	   
        if(prevArticle.length > 0) {
-       prevArticle.addClass('current');
+         prevArticle.addClass('current');
        }
        else if(prevArticle.length <= 0) {  
-       article.last().addClass('current');
+         article.last().addClass('current');
        }  
      }  
   }); 
