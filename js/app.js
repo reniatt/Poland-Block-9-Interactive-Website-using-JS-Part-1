@@ -16,8 +16,6 @@ var main = function() {
     if(event.which == RIGHT_ARROW_KEY_CODE) {
       $('.description').hide();
       $('.current').children('.description').show();
-	  
-      console.log('log test')
     }
     else if(event.which == DOWN_ARROW_KEY_CODE) {
       var currentArticle = $('.current');
